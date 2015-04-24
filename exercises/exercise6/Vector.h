@@ -111,8 +111,8 @@ bool Vector<T>::popBack()
 {
     if (_size == 0)
     {
-	return false;
-        cout << "Error" << endl;
+		cout << "Error" << endl;
+		return false;
     }
 
     --_size;
@@ -150,7 +150,7 @@ bool Vector<T>::removeAt(unsigned index)
     if (index >= _size)
     {
         cout << "Error" << endl;
-	return false;
+		return false;
     }
 
     for (unsigned i = index; i < _size; ++i)
